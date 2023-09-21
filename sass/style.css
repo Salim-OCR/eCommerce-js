@@ -94,4 +94,9 @@ main section .container .produit .btnCommender:hover {
   border: 1px solid brown;
   color: brown;
   transform: scale(1.1);
+}
+
+.lien-panier {
+  position: absolute;
+  left: 125px;
 }/*# sourceMappingURL=style.css.map */
