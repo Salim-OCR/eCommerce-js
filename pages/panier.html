@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../sass/style.css">
+        <title>Panier</title>
+    </head>
+
+    <body>
+
+        <main>
+            <header>
+                <h1>Votre panier</h1>
+                <ul>
+                    <li> <a href="../index.html">accueil</a></li>
+                </ul>
+            </header>
+            <section>
+            </section>
+            <footer>
+                <h3>Validation du formulaire</h3> <br>
+                <form>
+                    <div class="prenom-container">
+                        <label for="prenom">prénom</label>
+                        <input type="text" autocomplete="off" id="prenom">
+                        <br>
+                        <span></span>
+                    </div>
+                    <div class="nom-container">
+                        <label for="nom">nom</label>
+                        <input type="text" autocomplete="off" id="nom">
+                        <br>
+                        <span></span>
+                    </div>
+
+                    <div class="ville-container">
+                        <label for="ville">ville</label>
+                        <input type="text" autocomplete="off" id="ville">
+                        <br>
+                        <span></span>
+                    </div>
+
+                    <!-- <div class="codePostal-container">
+                        <label for="codePostal">C-P</label>
+                        <input type="number" maxlength="5" autocomplete="off" id="codePostal">
+                        <br>
+                        <span></span>
+                    </div> -->
+
+                    <div class="email-container">
+                        <label for="email">email</label>
+                        <input type="text" autocomplete="off" id="email">
+                        <br>
+                        <span></span>
+                    </div>
+                    <br><br>
+                    <input id="btnValidation" type="submit" value="validation de la commende">
+                </form>
+            </footer>
+        </main>
+
+        <script src="../js/arrayProduits.js"></script>
+        <script src="../js/panier.js"></script>
+        <script src="../js/form.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,114 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+h3 {
+    text-transform: capitalize;
+    padding: 20px 0;
+    color: rgb(208, 153, 13);
+    text-shadow: 1px 1px 0px rgb(218, 210, 210);
+    letter-spacing: 3px;
+}
+
+main {
+    border: 1px solid;
+    width: 90%;
+    margin: 0 auto;
+
+    header {
+        background: rgb(192, 37, 37);
+        height: 10vh;
+        position: relative;
+
+        h1 {
+            text-transform: uppercase;
+            text-shadow: 1px 1px 2px whitesmoke;
+        }
+
+        a {
+            list-style-type: none;
+            text-decoration: none;
+            background: whitesmoke;
+            color: indianred;
+            padding: 10px 15px;
+            border: 1px solid transparent;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            transition: .2s ease-out;
+            text-transform: uppercase;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            &:hover {
+                border: 1px solid whitesmoke;
+                background: transparent;
+                color: whitesmoke;
+            }
+        }
+    }
+
+    section {
+        background: rgb(76, 76, 181);
+
+        .container {
+            width: 100%;
+            height: 250px;
+            margin-bottom: 2px;
+            display: flex;
+
+            .img_produit {
+                width: 50%;
+                border: 1px solid whitesmoke;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .produit {
+                @extend .img_produit;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+
+                    li {
+                        text-align: left;
+                        padding-left: 10px;
+                        margin: 5px 0;
+                        font-weight: 900;
+                    }
+                }
+
+                .btnCommender {
+                    padding: 10px 15px;
+                    margin-top: 30px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    background: rgb(212, 203, 203);
+                    border: 1px solid transparent;
+                    text-transform: capitalize;
+                    transition: .2s ease-out;
+                    cursor: pointer;
+
+                    &:hover {
+                        border: 1px solid brown;
+                        color: brown;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+        }
+    }
+}
